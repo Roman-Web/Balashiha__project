@@ -5,7 +5,7 @@
 
 - var page_name = "home"
 
-include Общие_части/mixins.pug
+include common_parts/mixins.pug
 
 - var pageId = 1
 
@@ -13,16 +13,16 @@ include Общие_части/mixins.pug
 <!DOCTYPE html>
 html(lang="ru")
 	head
-		include Общие_части/head.pug
+		include common_parts/head.pug
 
 		+styles
 	body.home-page
-		include Общие_части/header.pug
+		include common_parts/header.pug
 
 		include index__body.pug
 		//- libs Css
 		link(rel="stylesheet", href="css/popup.css")
 
-		include Общие_части/modals.pug
-		include Общие_части/footer.pug
-		include Общие_части/scripts.pug
+		include common_parts/modals.pug
+		include common_parts/footer.pug
+		include common_parts/scripts.pug

@@ -7,7 +7,7 @@
 
 - var title__h1 = "Битумная мастика с доставкой"
 
-include Общие_части/mixins.pug
+include common_parts/mixins.pug
 
 - var pageId = 3
 
@@ -15,15 +15,15 @@ include Общие_части/mixins.pug
 <!DOCTYPE html>
 html(lang="ru")
 	head
-		include Общие_части/head.pug
+		include common_parts/head.pug
 		+styles
 	body.template-page.template-page--mastika
-		include Общие_части/header__template.pug
+		include common_parts/header__template.pug
 
 		include mastika__body.pug
 		//- libs Css
 		link(rel="stylesheet", href="css/popup.css")
 
-		include Общие_части/modals.pug
-		include Общие_части/footer.pug
-		include Общие_части/scripts.pug
+		include common_parts/modals.pug
+		include common_parts/footer.pug
+		include common_parts/scripts.pug
