@@ -1,0 +1,28 @@
+- var title = "Купить Бетон в Балашихе с доставкой, цена производителя";
+- var description = "Бетон и раствор в Балашихе по цене производителя. Доставка до вашего объекта в кратчайшие сроки";
+- var keywords = "бетон Ивантеевка, купить бетон, бетон цена, бетон с доставкой, раствор Ивантеевка, купить раствор";
+
+
+- var page_name = "home"
+
+include Общие_части/mixins.pug
+
+- var pageId = 1
+
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include Общие_части/head.pug
+
+		+styles
+	body.home-page
+		include Общие_части/header.pug
+
+		include index__body.pug
+		//- libs Css
+		link(rel="stylesheet", href="css/popup.css")
+
+		include Общие_части/modals.pug
+		include Общие_части/footer.pug
+		include Общие_части/scripts.pug

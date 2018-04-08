@@ -1,0 +1,29 @@
+- var title = "Адреса и телефоны нашего офиса - Лесстрон";
+- var description = "Контактная информация для посетителей сайта";
+- var keywords = "контакты Лесстрон";
+
+
+- var page_name = "contacty"
+
+- var title__h1 = "Контакты"
+
+include Общие_части/mixins.pug
+
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include Общие_части/head.pug
+
+		+styles
+	body.template-page.template-page--contacty
+		include Общие_части/header__template.pug
+
+		include contacty__body.pug
+		//- libs Css
+		link(rel="stylesheet", href="css/popup.css")
+
+		include Общие_части/modals.pug
+		include Общие_части/footer.pug
+		
+		include Общие_части/scripts.pug

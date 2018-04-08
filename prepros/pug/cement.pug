@@ -1,0 +1,30 @@
+- var title = "Купить Цемент в Балашихе с доставкой, цены производителя";
+- var description = "Цемент с доставкой до Балашихи, купить по лучшей цене в компании Лесстрон. Будем рады сотрудничеству";
+- var keywords = "цемент Балашиха, купить цемент, цемент цена";
+- var name_city_menu = "Бетон в Мытищах";
+
+
+- var page_name = "cement"
+
+- var title__h1 = "Цемент с доставкой в Балашиху"
+
+include Общие_части/mixins.pug
+
+- var pageId = 2
+
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include Общие_части/head.pug
+		+styles
+	body.template-page.template-page--cement
+		include Общие_части/header__template.pug
+
+		include cement__body.pug
+		//- libs Css
+		link(rel="stylesheet", href="css/popup.css")
+
+		include Общие_части/modals.pug
+		include Общие_части/footer.pug
+		include Общие_части/scripts.pug

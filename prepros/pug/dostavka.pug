@@ -1,0 +1,29 @@
+- var title = "Информация по доставке - Лесстрон";
+- var description = "Вся информация по доставке стройматериалов в города МО";
+- var keywords = "информация по стоимости привоза стройматериалов";
+
+
+- var page_name = "dostavka"
+
+- var title__h1 = "Доставка и оплата"
+
+include Общие_части/mixins.pug
+
+- var pageId = 5
+
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include Общие_части/head.pug
+		+styles
+	body.template-page.template-page--dostavka
+		include Общие_части/header__template.pug
+
+		include dostavka__body.pug
+		//- libs Css
+		link(rel="stylesheet", href="css/popup.css")
+
+		include Общие_части/modals.pug
+		include Общие_части/footer.pug
+		include Общие_части/scripts.pug
