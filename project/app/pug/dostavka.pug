@@ -1,29 +1,78 @@
-- var title = "Информация по доставке - Лесстрон";
-- var description = "Вся информация по доставке стройматериалов в города МО";
-- var keywords = "информация по стоимости привоза стройматериалов";
+extends common_parts/template.pug
+
+block vars
+	- var page_name = "dostavka"
+	- var title__h1 = "Доставка и оплата"
+
+	- var title = "Информация по доставке - Лесстрон";
+	- var description = "Вся информация по доставке стройматериалов в города МО";
+	- var keywords = "информация по стоимости привоза стройматериалов";
+
+	- var beton_class = "template-page template-page--dostavka"
+
+block header
+	include common_parts/header__template.pug
 
 
-- var page_name = "dostavka"
+block main
 
-- var title__h1 = "Доставка и оплата"
+	.template-article__wrap
+		.text-elements__wrap
+			h2.template__h2 Доставка бетона и цемента
+			p
+				| В компании «Лесстрон» вы можете заказать быструю и надежную доставку бетона в Балашиху. Имеется несколько условий:
+				ul.text__ul
+					li Объем автобетоносмесителя: от 7 до 12 м3;
+					li Заказ: от 3 м3;
+					li При заказе бетона объемом меньше 7 м3, оплата будет составлять как за 7 м3;
+					li Разгрузка – около 1 часа.
 
-include common_parts/mixins.pug
+			p.
+				Стоимость доставки продукции - минимальна, так как для этого у нас имеется необходимая техника. Мы доставим любые объемы в оговоренное место и время!
 
-- var pageId = 5
 
+		.beton-template-price__table.beton-template-price__table--dostavka
+			.price-template-table__top-row
+				span.price-template-table__column-title Расстояние
+				span.price-template-table__column-title Цена за перевозку м<sup><small>3</sup></small> груза
 
-<!DOCTYPE html>
-html(lang="ru")
-	head
-		include common_parts/head.pug
-		+styles
-	body.template-page.template-page--dostavka
-		include common_parts/header__template.pug
+			.price-template-table__row
+				span.price-template-table__row-value до 10 км
+				span.price-template-table__row-value 350 руб.
 
-		include dostavka__body.pug
-		//- libs Css
-		link(rel="stylesheet", href="css/popup.css")
+			.price-template-table__row
+				span.price-template-table__row-value до 15 км
+				span.price-template-table__row-value 400 руб.
 
-		include common_parts/modals.pug
-		include common_parts/footer.pug
-		include common_parts/scripts.pug
+			.price-template-table__row
+				span.price-template-table__row-value до 20 км
+				span.price-template-table__row-value 450 руб.
+
+			.price-template-table__row
+				span.price-template-table__row-value до 25 км
+				span.price-template-table__row-value 500 руб.
+
+			.price-template-table__row
+				span.price-template-table__row-value до 30 км
+				span.price-template-table__row-value 550 руб.
+
+			.price-template-table__row
+				span.price-template-table__row-value до 35 км
+				span.price-template-table__row-value 600 руб.
+
+			.price-template-table__row
+				span.price-template-table__row-value до 40 км
+				span.price-template-table__row-value 650 руб.
+
+			.price-template-table__row
+				span.price-template-table__row-value до 50 км
+				span.price-template-table__row-value договорная
+
+			.template-promo-block
+				.promo-text__wrap
+					h3.promo__h3 Вопросы или заказ цемента:
+					.promo__contacts
+						span.promo__contacts__item 8-499-641-10-20
+						span.promo__contacts__item info@lesstron.com
+
+				a(href="#").big-orange-button Заказать цемент
